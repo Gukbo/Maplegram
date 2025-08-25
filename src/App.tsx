@@ -1,9 +1,19 @@
-import Header from "./components/header.tsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import Home from "./pages/Home";
+import Meso from "./pages/Meso";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> }, // index를 쓰는 이유는 부모 경로의 메인콘텐츠이기때문에
+      { path: "Meso", element: <Meso /> },
+    ],
+  },
+]);
 
 export default function App() {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
