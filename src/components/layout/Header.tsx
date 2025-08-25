@@ -3,14 +3,19 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <div>
-      <header className="fixed top-0 left-0 w-full bg-amber-50 shadow z-50">
-        <div className="max-w-6xl mx-auto flex items-center justify-between">
-          <div>
-            <Link to="/">로고</Link>
+      <header className="fixed inset-x-0 top-0 z-10 border-b border-main-black bg-main-white text-main-orange text-2xl">
+        <div className="flex h-14 items-center justify-between gap-8 px-4 sm:px-6">
+          <div className="flex items-center gap-4">
+            <Link className="" to="/">
+              로고
+            </Link>
           </div>
-          <nav>
+          <div className="flex items-center gap-6 max-md:hidden">
             <Link to="/Meso">결정석</Link>
-          </nav>
+          </div>
+          <div className="flex items-center gap-25 md:hidden">
+            <button className="">☰</button>
+          </div>
         </div>
       </header>
     </div>
