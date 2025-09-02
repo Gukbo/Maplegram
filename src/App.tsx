@@ -11,8 +11,11 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> }, // index를 쓰는 이유는 부모 경로의 메인콘텐츠이기때문에
       { path: "Meso", element: <Meso /> },
-      { path: "*", element: <NotFound /> },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
