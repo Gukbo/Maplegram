@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getOcid, getCharacterInfo } from "../../api/Character";
 
-export default function Calc({ nickname = "" }: { nickname?: string }) {
+export default function FindChar({ nickname = "" }: { nickname?: string }) {
   const [info, setInfo] = useState<any>(null);
   const [inputValue, setInputValue] = useState<string>("");
   const [name, setName] = useState<string>(nickname);
