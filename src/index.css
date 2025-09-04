@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --main-orange: #ff9c00;
-  --main-white: #fafffb;
-  --main-black: #000012;
+  --main-orange: #ffb347;
+  --main-white: #f5f5f5;
+  --main-lightgray: #e0e0e0;
+  --main-gray: #444444;
+  --main-black: #222222;
 }
 
 @theme {

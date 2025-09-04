@@ -1,12 +1,15 @@
-import { Link } from "react-router-dom";
+import homeImage from "../assets/homeImage.png";
 
 export default function Home() {
   return (
     <section>
-      <div>Maplegram 홈화면</div>
-      <Link className="" to="/Meso">
-        결정석 계산기
-      </Link>
+      <div className="flex flex-col items-center justify-center h-screen w-full overflow-x-hidden">
+        <img
+          className="w-full h-full object-cover"
+          src={homeImage}
+          alt="background"
+        />
+      </div>
     </section>
   );
 }
